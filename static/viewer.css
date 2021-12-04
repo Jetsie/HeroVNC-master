@@ -1,0 +1,163 @@
+body
+{
+  -webkit-user-select: none;
+     -moz-user-select: -moz-none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow: hidden;
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+/* Desktop - container <div> element that contains the canvas element
+ */
+
+#desktop
+{
+  overflow: hidden;
+  display: none;
+  margin: auto;
+}
+
+#desktop-content
+{
+  position:relative;
+}
+
+canvas
+{
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); /* mobile Webkit */
+}
+
+#message {
+  position: absolute;
+  left: 10px;
+  height: 60px;
+  line-height:60px;
+  vertical-align: middle;
+  color: #888;
+}
+
+/* Disconnect button that is situated below the desktop */
+
+#desktopBarFrame
+{
+  background-color: white;
+  position: absolute;
+  margin: auto;
+  float: center;
+  height: 60px;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  display: -webkit-flex; /* Safari */
+  justify-content: center;
+    -webkit-justify-content: center; /* Safari 6.1+ */
+}
+
+#disconnectBtn, #ctrlAltDelBtn
+{
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+/* Status Dialog styles */
+
+#container
+{
+   position: absolute;
+   top: 50%;
+   margin-top: -195px;
+   left: 0;
+   width: 100%;
+}
+
+#mainView
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 588px;
+  height: 388px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 450px 74px;
+  vertical-align: middle;
+}
+
+#statusDialog
+{
+  position: relative;
+  height: 200px;
+  width: 80%;
+  float: center;
+  top: 15%;
+  left: 12.5%;
+}
+
+#statusFrame
+{
+  position: relative;
+  margin: auto;
+  float: center;
+  width: 100%;
+  height: 50px;
+  top: 5px;
+}
+
+#statusTitle
+{
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 16px;
+}
+
+#statusContent
+{
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+#buttonBarFrame
+{
+  position: absolute;
+  margin: auto;
+  float: center;
+  width: 590px;
+  bottom: 20px;
+  display: flex;
+  display: -webkit-flex; /* Safari */
+  justify-content: center;
+    -webkit-justify-content: center; /* Safari 6.1+ */
+}
+
+#connectBtnFrame
+{
+  display: none; /* Connect button is not displayed initially */
+}
+
+#ctrlAltDelBtn
+{
+  display: none; /* Ctrl-Alt-Del button is not displayed when not connected to server */
+}
+
+.status-dlg-button
+{
+  padding: 5px 10px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.center-align
+{
+  padding-left: 10px;
+  padding-right: 10px;
+}
